@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 
-const API_ADDRESS = 'https://spotify-api-wrapper.appspot.com'
+const Artist = ({ artist }) => {
+    if (!artist) return null;
 
-const Artists = ({ artist }) => {
     const { images, name, followers, genres } = artist;
 
     return (
@@ -15,4 +15,4 @@ const Artists = ({ artist }) => {
     );
 }
 
-export default Artists
+export default Artist;
